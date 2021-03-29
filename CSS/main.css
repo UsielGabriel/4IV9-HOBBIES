@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;    
+    /*font-family: 'Kiwi Maru', serif;*/   
+}
+
+body{
+    background-color: #3A435E;
+    text-align: justify;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.principal{
+    display: flex;  
+    flex-direction: column;
+}
+/*************************************************************************************************/
+/*navegacion de la pagina*/
+.contenedor_de_navegacion{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: #6C6F7F;
+    border: 5px solid #455561;    
+    border-radius: 5px;   
+}
+
+.navegacion_top{
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.menu_navegacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contenedor_de_botones{
+	cursor: pointer;
+    margin: 5px 3px;       
+    background-color: #6C6F7F;
+}
+
+.contenedor_de_botones a{
+    padding: 5px;
+    border-radius: 5px; 
+    text-decoration: none;
+    background-color: #6C6F7F;
+    color: #3A435E;
+}
+
+.contenedor_de_botones a:active{
+    padding: 5px;
+    border-radius: 5px; 
+    text-decoration: none;
+    background-color: #3A435E;
+    color: #6C6F7F;
+}
+
+.contenedor_de_botones button{
+    border: none;
+    background-color: #6C6F7F;
+}
+
+.boton_1{
+    order: 100;
+}
+
+.boton_2{
+    order: 90;    
+}
+
+.boton_3{
+    order: 80;    
+}
+
+.boton_4{
+    order: 70;    
+}
+
+.boton_5{
+    order: 60;
+}
+
+/*******************************************************************************************************/
+/*texto d la pagina*/
+.contenedor_de_texto{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #5C6672;
+    border: 5px solid #455561;
+    border-radius: 8px;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+.titulo{
+    width: 100%;
+    flex: 1;
+}
+
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img, .texto, .audio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*******************************************************************************************/
+/*imagenes*/
+
+
+.imagen{
+    width: 25rem;
+    margin: 1rem 12.5rem; 
+}
+
+.facebook, .instagram{
+    width: 3rem;
+    margin-top: 15px;
+}
+
+.facebook{
+    margin-right: 4rem;    
+}
+
+/*****************************************************************************************/
+/*piede pagina*/
+.contenedor_pie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #6C6F7F;
+    border: 5px solid #455561;
+    margin-top: 6.5rem auto;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+.top_pie{
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.bottom_pie{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+

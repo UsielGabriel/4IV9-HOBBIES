@@ -11,55 +11,64 @@ body{
     text-align: justify;
 }
 
+h1{
+    font-size: 2rem;
+}
+
 h2{
     text-align: center;
 }
 
-.navegacion{
-    text-align: center;
+.principal{
+    display: flex;  
+    flex-direction: column;
+}
+/*************************************************************************************************/
+/*navegacion de la pagina*/
+.contenedor_de_navegacion{
+    display: flex; 
+    flex-wrap: wrap;
     background-color: #6C6F7F;
-    border-top: 5px solid #455561;    
-    border-left: 5px solid #455561;
-    border-right: 5px solid #455561;   
-    left:0;
-    top:0;
+    border: 5px solid #455561;    
+    border-radius: 5px;   
+}
+
+.navegacion_top{
     width: 100%;
-    position: fixed;
-    z-index: 100;
+    flex: 1;
+    text-align: center;
 }
 
 .menu_navegacion{
-    background-color: #6C6F7F;
-    border-bottom: 5px solid #455561;
-    border-left: 5px solid #455561;
-    border-right: 5px solid #455561;    
-    left: 0;
-    top: 28px;
     width: 100%;
-    position: fixed;
-    z-index: 50;
-}
-
-.contenedor_de_contenedores_de_botones{
     display: flex;
     flex-direction: row-reverse;
 }
 
 .contenedor_de_botones{
-	/*border: none;*/
 	cursor: pointer;
-    margin: 5px;       
+    margin: 5px 3px;       
     background-color: #6C6F7F;
 }
 
 .contenedor_de_botones a{
+    padding: 5px;
+    border-radius: 5px; 
     text-decoration: none;
     background-color: #6C6F7F;
+    color: #3A435E;
+}
+
+.contenedor_de_botones a:active{
+    padding: 5px;
+    border-radius: 5px; 
+    text-decoration: none;
+    background-color: #3A435E;
+    color: #6C6F7F;
 }
 
 .contenedor_de_botones button{
     border: none;
-    text-decoration: none;
     background-color: #6C6F7F;
 }
 
@@ -80,50 +89,115 @@ h2{
 }
 
 .boton_5{
-    order: 60;    
+    order: 60;
+}
+
+/*******************************************************************************************************/
+/*texto d la pagina*/
+.todo_texto{
+    display: flex;
+    margin: 4rem;
+
+}
+
+.contenedor_lat_izquierda{    
+    width: 100%;    
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #5C6672;
+    border-radius: 8px; 
+    border: 5px solid #455561;
+    margin-right: 4rem;    
+    padding: 2rem;
+}
+
+.img_lat, .texto_alt{    
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .lat_izquierda{     
     background-color: #5C6672;
     border-radius: 8px; 
     border: 5px solid #455561;
-    height: 54rem;
-    width: 15rem;
     padding: 10px;
-    margin-top: 4rem;
-    left: 0;
 }
 
-.quien_soy, .rubik, .Ajedrez, .Videojuegos, .Podcast{
-    align-content: center;
+.contenedor_de_texto{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    width: 100%;
     background-color: #5C6672;
     border: 5px solid #455561;
-    border-radius: 8px; 
-    margin-top: 4rem;      
-    margin-bottom: 1rem;
-    padding: 10px;
+    border-radius: 8px;    
+    padding: 2rem;
 }
 
+.titulo{
+    width: 100%;
+    flex: 1;
+}
+
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img, .texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*******************************************************************************************/
+/*imagenes*/
 .yo2{   
-    width: 10rem;
-    margin: 2rem 2rem;    
+    width: auto;
+    height: 20rem;
+    margin: 2rem;    
 }
 
-.yo, .videojuego, .rubi, .ajed, .leyendas{
-    width: 25rem;
-    margin: 1rem 12.5rem; 
+.video{
+    width: 18rem;
+    height: 10rem;
+    margin: 2rem 12.5rem; 
 }
 
 .facebook, .instagram{
     width: 3rem;
+    margin-top: 15px;
 }
 
-footer{
+.facebook{
+    margin-right: 4rem;    
+}
+
+/*****************************************************************************************/
+/*piede pagina*/
+.contenedor_pie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #6C6F7F;
     border: 5px solid #455561;
     margin-top: 6.5rem auto;
     padding-top: 1rem;
     padding-bottom: 0.7rem;
+}
+
+.top_pie{
+    width: 100%;
+    flex: 1;
     text-align: center;
+}
+
+.bottom_pie{
+    width: 100%;
+    display: flex;
+    justify-content:center;
 }
 
